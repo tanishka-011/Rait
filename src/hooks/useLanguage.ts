@@ -5,7 +5,7 @@ export const useLanguage = () => {
   const [language, setLanguage] = useState<Language>('en');
 
   useEffect(() => {
-    const savedLanguage = localStorage.getItem('annadatax-language') as Language;
+    const savedLanguage = localStorage.getItem('rait-language') as Language;
     if (savedLanguage) {
       setLanguage(savedLanguage);
     }
@@ -14,7 +14,7 @@ export const useLanguage = () => {
   const toggleLanguage = () => {
     const newLanguage = language === 'en' ? 'hi' : 'en';
     setLanguage(newLanguage);
-    localStorage.setItem('annadatax-language', newLanguage);
+    localStorage.setItem('rait-language', newLanguage);
   };
 
   return { language, toggleLanguage };

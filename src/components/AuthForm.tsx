@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { auth } from '../firebase';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+import logo from '../logo.png.jpg';
+import { translations } from '../data/translations';
+import { useLanguage } from '../hooks/useLanguage';
 
 const AuthForm: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -9,6 +12,9 @@ const AuthForm: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+
+  const { language } = useLanguage();
+  const t = translations[language];
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

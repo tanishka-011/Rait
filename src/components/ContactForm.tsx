@@ -90,7 +90,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ language }) => {
                 <h3 className="font-semibold text-gray-800 mb-1">
                   {language === 'hi' ? 'ईमेल' : 'Email'}
                 </h3>
-                <p className="text-green-600 font-medium">help@annadatax.gov.in</p>
+                <p className="text-green-600 font-medium">help@rait.gov.in</p>
                 <button className="mt-2 text-green-600 text-sm hover:underline">
                   {language === 'hi' ? 'ईमेल भेजें' : 'Send Email'}
                 </button>

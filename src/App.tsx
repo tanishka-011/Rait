@@ -87,7 +87,7 @@ function App() {
               </h3>
               <ul className="space-y-1 text-sm">
                 <li>📞 1800-123-4567</li>
-                <li>📧 help@annadatax.gov.in</li>
+                <li>📧 help@rait.gov.in</li>
                 <li>⏰ 24/7 {language === 'hi' ? 'उपलब्ध' : 'Available'}</li>
               </ul>
             </div>
@@ -102,7 +102,7 @@ function App() {
           </div>
           <div className="border-t border-green-700 pt-4">
             <p className="text-sm">
-              © 2025 AnnadataX - {language === 'hi' ? 'भारत सरकार की एक पहल' : 'A Government of India Initiative'}
+              © 2025 Rait - {language === 'hi' ? 'भारत सरकार की एक पहल' : 'A Government of India Initiative'}
             </p>
           </div>
         </div>

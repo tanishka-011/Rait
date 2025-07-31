@@ -1,12 +1,12 @@
-/* Custom CSS for AnnadataX */
+/* Custom CSS for Rait */
 
 /* Color Variables */
 :root {
-  --primary-green: #4CAF50;
+  --primary-green: #A3C585;
   --earth-yellow: #F9A825;
-  --clay-brown: #8D6E63;
-  --background-cream: #FFFBE6;
-  --action-blue: #0288D1;
+  --clay-brown: #B05A1E;
+  --background-cream: #FBECC2;
+  --action-orange: #F97316;
   --text-dark-gray: #2E2E2E;
 }
 
@@ -28,11 +28,39 @@ body {
 }
 
 .bg-brown-600 {
-  background-color: #795548;
+  background-color: #C97A3A;
+}
+
+.bg-green-500 {
+  background-color: var(--primary-green);
+}
+
+.bg-green-800 {
+  background-color: #6B8E23;
+}
+
+.bg-yellow-500 {
+  background-color: var(--earth-yellow);
+}
+
+.bg-orange-500 {
+  background-color: var(--action-orange);
 }
 
 .hover\:bg-brown-600:hover {
-  background-color: #795548;
+  background-color: #C97A3A;
+}
+
+.hover\:bg-green-600:hover {
+  background-color: #7CA66B;
+}
+
+.hover\:bg-yellow-600:hover {
+  background-color: #F7B733;
+}
+
+.hover\:bg-orange-600:hover {
+  background-color: #F59E42;
 }
 
 /* Voice Recognition Animation */

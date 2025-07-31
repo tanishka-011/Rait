@@ -3,6 +3,7 @@ import { FileText, CheckCircle, Phone, Globe } from 'lucide-react';
 import { Language } from '../types';
 import { translations } from '../data/translations';
 import { NewsTicker } from './NewsTicker';
+import logo from '../logo.png.jpg';
 
 interface HeroSectionProps {
   language: Language;
@@ -45,13 +46,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ language, onSectionCha
         <NewsTicker language={language} />
         
         <div className="text-center mb-8">
-          <div className="w-24 h-24 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span className="text-4xl">🌾</span>
+          <div className="w-24 h-24 rounded-full overflow-hidden flex items-center justify-center mx-auto mb-4 shadow-lg bg-white border border-gray-200">
+            <img src={logo} alt="Rait Logo" className="w-full h-full object-cover" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
-            {t.appName}
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto" style={{ fontFamily: 'cursive, Pacifico, Dancing Script, sans-serif' }}>
             {t.tagline}
           </p>
         </div>

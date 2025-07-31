@@ -1,7 +1,7 @@
 export const translations = {
   en: {
-    appName: 'AnnadataX',
-    tagline: 'From where farmer leads, India grows',
+    appName: 'Rait',
+    tagline: 'Know More Grow More',
     viewSchemes: 'View Schemes',
     checkEligibility: 'Check Eligibility',
     contactAdmin: 'Contact Admin',
